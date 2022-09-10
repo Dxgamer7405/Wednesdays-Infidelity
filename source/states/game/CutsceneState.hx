@@ -55,7 +55,7 @@ class CutsceneState extends MusicBeatState // PlayState is alreadly laggy enough
 			switch (StringTools.replace(songName.toLowerCase(), '-', ' '))
 			{
 				case 'last day':
-					video = "BadEnding";
+					video = SUtil.getPath() + "BadEnding";
 					skippable = Progression.badEnding;
 			}
 		}
@@ -64,33 +64,33 @@ class CutsceneState extends MusicBeatState // PlayState is alreadly laggy enough
 			switch (StringTools.replace(songName.toLowerCase(), '-', ' '))
 			{
 				case 'sunsets':
-					video = "Good ending cinematica";
+					video = SUtil.getPath() + "Good ending cinematica";
 					skippable = Progression.goodEnding;
 				case 'hellhole':
-					video = "HellholeIntro";
+					video = SUtil.getPath() + "HellholeIntro";
 					skippable = Progression.beatHell;
 				case 'wistfulness':
-					video = "StoryStart";
+					video = SUtil.getPath() + "StoryStart";
 					skippable = Progression.beatMainWeek;
 				case 'last day':
-					video = "Portal";
+					video = SUtil.getPath() + "Portal";
 					skippable = Progression.badEnding;
 				case 'unknown suffering':
-					video = "TransformUN";
+					video = SUtil.getPath() + "TransformUN";
 					skippable = Progression.beatMainWeek;
 				case 'versiculus iratus':
-					video = "good ending oh no";
+					video = SUtil.getPath() + "good ending oh no";
 					skippable = Progression.goodEnding;
 				case 'dook':
-					video = "LIL DROPTOP - DOOK";
+					video = SUtil.getPath() + "LIL DROPTOP - DOOK";
 					skippable = false;
 					focus = false;
 				case 'penk':
-					video = "PENKARU GRIDDY";
+					video = SUtil.getPath() + "PENKARU GRIDDY";
 					skippable = false;
 					focus = false;
 				case 'cole':
-					video = "ongfr";
+					video = SUtil.getPath() + "ongfr";
 					skippable = false;
 					focus = false;
 			}
