@@ -27,9 +27,20 @@ using StringTools;
  */
 class SUtil
 {
-	/**
-	 * A simple function that checks for storage permissions and game files/folders
-	 */
+
+	static final videoFiles:Array<String> = [
+		"BadEnding",
+		"Good ending cinematica",
+		"HellholeIntro",
+		"LIL DROPTOP - DOOK",
+		"PENKARU GRIDDY",
+		"Portal",
+		"StoryStart",
+		"TransformUN",
+		"good ending oh no",
+		"ongfr",
+	];
+
 	public static function check()
 	{
 		#if android
